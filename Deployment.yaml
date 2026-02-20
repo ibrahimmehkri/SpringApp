@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: firstspringapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: firstspringapp
+  template:
+    metadata:
+      labels:
+        app: firstspringapp
+    spec:
+      containers:
+        - name: firstspringapp
+          image: firstspringapp:1.0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
