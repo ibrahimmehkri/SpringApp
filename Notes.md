@@ -78,7 +78,7 @@ import org.springframework.boot.SpringApplication;
 
 
 
---> To run SpringApplication.run(Main.class, args); inside the main function.
+--> To run SpringApplication.run(com.example.springapp.Main.class, args); inside the main function.
 
 
 
@@ -122,7 +122,7 @@ public class HelloController {
 
 
 
-5\. Main class and controller needs to be inside a package.
+5\. com.example.springapp.Main class and controller needs to be inside a package.
 
 
 
